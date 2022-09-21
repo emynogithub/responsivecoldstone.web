@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    background: #840612;
+    display: flex;
+    height:80px;
+    align-items: center;
+    border-bottom: 1px solid white;
+    position:fixed;
+    width:100%;
+    z-index: 999;
+}
+
+
+
+
+body{
+    min-width:440px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+header ul{
+    flex-basis: 50%; 
+    display: flex;
+    justify-content: right;
+    gap:1rem;
+    margin-right: 2rem;
+}
+
+header ul li{
+  color:white;
+  font-size: 1.1rem;
+  
+}
+
+header ul li a{
+    color:white
+  }
+
+ 
+
+
+header ul li a:hover{
+  color:#840612
+}
+header label {
+   flex-basis: 50%;
+    margin: 1rem;
+
+
+}
+
+header label img{
+ width:250px;
+ 
+ 
+}
+
+@media(max-width:580px){
+   
+
+    header{
+        
+    }
+    header ul li{
+        display: none;
+    }
+
+    header ul .show{
+        display: block;
+        padding-right: 15px;
+      }
+
+
+    header label img {
+       width:150px;
+       
+    }
+}
+/**********section-1**********/
+
+.section-1{
+
+    background:url(background1.png) no-repeat ;
+    height: 100vh;
+    background-size:96rem;
+    background-position: right;
+    
+    
+
+
+}
+
+.btn{
+    display: flex;
+    gap:.5rem;
+    width: 400px;
+    padding-top: 20rem;
+    padding-left: 2rem;
+}
+
+.btn button {
+    padding: 30px 0px;
+    cursor:pointer;
+    border-radius: 15px;
+    width: 150px;
+    height: 95px;
+    font-size: 22px;
+    color:#840612;
+    
+}
+
+.btn button a{
+    white-space: nowrap;
+    font-size: 1.1rem;
+    color:#840612;
+}
+
+.btn img{
+    width:22px;
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+.section-2{
+    display: flex;
+
+    justify-content: space-around;
+
+}
+.promo-heading{
+    margin:3rem 0.8rem;
+    color:#840612;
+    font-size: 1.9rem;
+
+}
+
+@media(max-width:580px){
+    .section-1{
+        background-size:60rem;
+        background-position: -5rem;
+        background-color: #840612;
+        
+        
+
+    }
+
+
+    .btn{
+        padding-top: 15rem;
+        padding-left: 3rem;
+    }
+
+
+    
+.btn button {  
+    width: 120px;
+    height: 70px;
+    font-size: 15px;
+    padding-top: 15px;
+   
+    
+}
+
+
+
+}
+
+/*****section****/
+
+.section-2 .promotion {
+  /*  width:452px;**/
+    flex-basis: 32%;
+    
+}
+
+.section-2 .promotion  img{
+    width:100%;
+
+
+}
+
+
+@media(max-width:580px){
+
+
+    .section-2 {
+        display: block;
+        flex-wrap: wrap;
+        margin-top: 0;
+        
+        
+    }
+    .promo-heading{
+        font-size: 1rem;
+        
+        margin:0;
+        margin: 1.3rem;
+    } 
+}
+
+/*******section-3********/
+
+.section-3{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);;
+    margin: 1rem auto;
+    row-gap: 6rem;
+    
+    
+
+}
+
+.section-3 .favourite {
+   
+    width:100%;
+    text-align: center;
+}
+
+.section-3 .favourite img{
+    width: 50%;
+}
+
+
+.section-3 .favourite h2{
+    color: #840612;
+    font-size: 1.9vw;
+}
+
+
+.section-3 .favourite p{
+    color:#777777;
+    font-size: 1.5vw;
+    font-weight: 530;
+}
+
+
+@media(max-width:580px){
+    
+.section-3{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 1rem;
+}
+
+.section-3 .favourite p{
+    font-size: 0.7rem;
+    
+}
+
+
+.section-3 .favourite {
+    width:220px;
+    margin: 0;
+}
+}
+/*****section-4****/
+
+.section-4 {
+    background-color: #840612;
+}
+
+.section-4 h2{
+ text-align: center;
+ padding: 1rem;
+ color: white;
+}
+
+.section-4 .circle-wrapper .circle-image{
+
+    flex-basis: 30.77%;
+}
+
+.section-4 .circle-wrapper p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.2rem;
+}
+
+.section-4 .circle-wrapper h3{
+    padding: 0.8rem;
+}
+
+.section-4 .circle-wrapper{
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    padding-bottom: 1.9rem;
+
+}
+
+@media(max-width:580px){
+    .section-4 .circle-wrapper{
+        flex-direction: column;
+        font-size: 0.71rem;
+        gap: 3rem;
+        
+        
+        
+    } 
+
+    .section-4 .circle-wrapper .circle-image{
+        
+    }
+
+    .section-4 .circle-wrapper .circle-image p{
+         font-size: 0.99rem;
+         ;
+    }
+
+
+    
+
+    .section-4 .circle-wrapper .circle-image img{
+        width:290px;
+        
+    }
+}
+/*******section  555***********/
+.section-5{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('banner.png')
+    ;height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+
+.section-5 p{
+    text-align:center;
+}
+
+@media(max-width:580px){
+    .section-5 p{
+     padding:2rem
+     ;font-size: 1rem;
+    }
+    
+}
+
+
+/****8footer******/
+
+.down-nav {
+    background-color: #840612;
+    height: 25vh;
+    max-height: 38vh;
+}
+
+.down-nav ul{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.9vw;
+  font-weight: 800;
+  color: white;
+  padding: 1rem 0rem;
+}
+
+.down-nav ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    margin-top: 0,9rem;
+    background-color: white;
+    opacity: 0.3;
+    height: 4rem;
+    
+}
+.down-nav ol .fa-brands{
+    font-size: 1.7rem;
+}
+
+@media(max-width:580px){
+    .down-nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+        font-size: 1rem;
+        row-gap:9px
+    }
+}
